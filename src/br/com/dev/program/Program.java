@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,9 +16,9 @@ import java.util.stream.Collectors;
 public class Program {
     public static void main(String[] args) {
 
-        System.out.println("Entre o caminho do arquivo");
-        //Scanner sc = new Scanner(System.in);
-        String path = "/home/fjunior/temp/desafio_17/in.csv";//sc.nextLine();
+        System.out.println("Entre o caminho do arquivo:");
+        Scanner sc = new Scanner(System.in);
+        String path = sc.nextLine();
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
 
