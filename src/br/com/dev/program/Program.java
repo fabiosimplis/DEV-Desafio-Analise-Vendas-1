@@ -54,5 +54,7 @@ public class Program {
         catch (IOException e) {
             System.err.println("ERROR: " + path + " (O sistema não pode encontrar o arquivo especificado)");
         }
+
+        sc.close();
     }
 }
